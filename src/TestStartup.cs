@@ -6,6 +6,6 @@ namespace PlusUltra.Testing
 {
     public abstract class TestStartup
     {
-        public abstract void ConfigureServices(IServiceCollection services, IConfiguration configuration, ILoggerFactory loggerFactory);
+        public abstract void ConfigureServices(IServiceCollection services, IConfiguration configuration);
     }
 }

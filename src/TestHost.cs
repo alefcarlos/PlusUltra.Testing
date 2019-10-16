@@ -22,11 +22,10 @@ namespace PlusUltra.Testing
 
             services.AddSingleton(Configuration);
             services.AddLogging(opt => opt.AddConsole());
-            var loggerFactory = services.BuildServiceProvider().GetService<ILoggerFactory>();
 
             var startup = Activator.CreateInstance<T>();
 
-            startup.ConfigureServices(services, Configuration, loggerFactory);
+            startup.ConfigureServices(services, Configuration);
 
             ServiceProvider = services.BuildServiceProvider();
         }
