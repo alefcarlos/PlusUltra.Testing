@@ -17,4 +17,9 @@ trigger:
     - README.md
 
 jobs:
-- template: nuget-default.yml@templates
+- job: Build
+  pool:
+    vmImage: 'windows-latest'
+
+  steps:
+    - template: nuget-default.yml@templates
