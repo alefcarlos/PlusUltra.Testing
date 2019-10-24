@@ -13,7 +13,7 @@ namespace PlusUltra.Testing
             //Configuration
             var configurationBuilder = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appSettings.json", optional: false)
+                .AddJsonFile("appSettings.json", optional: true)
                 .Build();
 
             Configuration = configurationBuilder;
