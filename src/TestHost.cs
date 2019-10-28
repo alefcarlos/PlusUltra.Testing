@@ -36,5 +36,10 @@ namespace PlusUltra.Testing
 
         public IConfiguration Configuration { get; }
         public E GetService<E>() => Scope.ServiceProvider.GetRequiredService<E>();
+
+        public virtual void Dispose()
+		{
+			Scope.Dispose();
+		}
     }
 }
