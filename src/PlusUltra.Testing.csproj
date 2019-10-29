@@ -2,6 +2,11 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
+        <Authors>Alef Carlos</Authors>
+        <Company>PlusUltra</Company>
+        <PackageTags>Testing;UnitTest;Integrated Tests;DI;DependencyInjection</PackageTags>
+        <PackageProjectUrl>https://github.com/alefcarlos/PlusUltra.Testing</PackageProjectUrl>
+        <Description>Code tests using Dependency Injection</Description>
 	</PropertyGroup>
 
   <ItemGroup>
